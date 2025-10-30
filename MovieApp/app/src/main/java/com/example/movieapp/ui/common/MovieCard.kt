@@ -1,4 +1,3 @@
-// En: ui/common/MovieCard.kt
 package com.example.movieapp.ui.common
 
 import androidx.compose.foundation.clickable

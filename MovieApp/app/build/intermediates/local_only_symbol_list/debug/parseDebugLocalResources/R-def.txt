@@ -7,8 +7,17 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable bss
+drawable descarga_2
+drawable fondo2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable logo
+font alegreya_bold
+font alegreya_italic
+font alegreya_regular
+font alegreyasans_bold
+font alegreyasans_regular
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

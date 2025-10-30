@@ -1,4 +1,3 @@
-// En: ui/common/MovieList.kt
 package com.example.movieapp.ui.common
 
 import androidx.compose.foundation.layout.*
@@ -14,7 +13,7 @@ import com.example.movieapp.model.Movie
 fun MovieList(
     title: String,
     movies: List<Movie>,
-    onMovieClick: (Int) -> Unit // 🔹 función que recibe un movieId (Int)
+    onMovieClick: (Int) -> Unit
 ) {
     Column(modifier = Modifier.padding(vertical = 8.dp)) {
         Text(text = title, modifier = Modifier.padding(horizontal = 16.dp))

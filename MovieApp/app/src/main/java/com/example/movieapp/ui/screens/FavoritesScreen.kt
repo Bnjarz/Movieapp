@@ -28,7 +28,7 @@ fun FavoritesScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Favoritos ❤️") },
+                title = { Text("Favoritos") },
                 navigationIcon = {
                     IconButton(onClick = onBack) {
                         Icon(
@@ -47,9 +47,8 @@ fun FavoritesScreen(
                 .verticalScroll(rememberScrollState())
         ) {
             if (favoriteMovies.isEmpty()) {
-                Text("No tienes películas favoritas aún 😢")
+                Text("No tienes películas favoritas aún")
             } else {
-                // 🔹 Convertimos FavoriteMovie → Movie
                 val movieList = favoriteMovies.map {
                     Movie(
                         id = it.id,

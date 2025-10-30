@@ -39,7 +39,6 @@ interface TmdbApi {
     ): Movie
 }
 
-// --- Objeto Retrofit para inicializar la API ---
 object RetrofitInstance {
     private const val BASE_URL = "https://api.themoviedb.org/3/"
 

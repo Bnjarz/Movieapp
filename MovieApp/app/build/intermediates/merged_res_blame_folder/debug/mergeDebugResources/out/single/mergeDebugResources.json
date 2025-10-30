@@ -1,66 +1,118 @@
 [
     {
-        "merged": "com.example.movieapp-debug-58:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.movieapp-main-60:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.movieapp-main-60:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\font_alegreya_italic.ttf.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\font\\alegreya_italic.ttf"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_descarga_2.jpeg.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\descarga_2.jpeg"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_shlogo.png.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\shlogo.png"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/xml_backup_rules.xml.flat",
-        "source": "com.example.movieapp-main-60:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_logos.png.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\logos.png"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_fondo2.jpeg.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\fondo2.jpeg"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.movieapp-main-60:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\font_alegreyasans_regular.ttf.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\font\\alegreyasans_regular.ttf"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.movieapp-debug-58:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.movieapp-main-60:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_logo.jpg.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\logo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_bss.png.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\bss.png"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\font_alegreya_regular.ttf.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\font\\alegreya_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\font_alegreya_bold.ttf.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\font\\alegreya_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.movieapp-debug-61:/drawable_fondo2.jpg.flat",
+        "source": "com.example.movieapp-main-63:/drawable/fondo2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-debug-61:\\font_alegreyasans_bold.ttf.flat",
+        "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\daemon\\8.13\\com.example.movieapp-main-63:\\font\\alegreyasans_bold.ttf"
     }
 ]

@@ -1,64 +1,63 @@
-// En: ui/navigation/MainNavigation.kt
 package com.example.movieapp.ui.navigation
 
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.navigation.NavType
+import androidx.compose.runtime.*
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navArgument
-import com.example.movieapp.ui.screens.DetailScreen
-import com.example.movieapp.ui.screens.FavoritesScreen
-import com.example.movieapp.ui.screens.HomeScreen
+import androidx.navigation.navigation
 import com.example.movieapp.viewmodel.MainViewModelFactory
+import com.example.movieapp.data.auth.AuthPrefsRepo
+import com.example.movieapp.ui.screens.auth.LoginScreen
+import com.example.movieapp.ui.screens.auth.WelcomeScreen
+import com.example.movieapp.ui.screens.auth.SignupScreen
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainNavigation(factory: MainViewModelFactory) {
-    val navController = rememberNavController()
+    val rootNavController = rememberNavController()
+    val context = LocalContext.current
 
-    Scaffold(
-        topBar = { TopAppBar(title = { Text("🎬 MovieApp") }) }
-    ) { innerPadding ->
+    var startDestination: String? by remember { mutableStateOf(null) }
 
-        // <-- Aplicamos innerPadding (PaddingValues) con Modifier.padding(innerPadding)
-        NavHost(
-            navController = navController,
-            startDestination = "home",
-            modifier = Modifier.padding(innerPadding)
+    LaunchedEffect(Unit) {
+        val hasCreds = AuthPrefsRepo.hasCredentials(context)
+        startDestination = if (hasCreds) {
+            Routes.APP_FLOW
+        } else {
+            Routes.AUTH_FLOW
+        }
+    }
+
+    if (startDestination == null) {
+        return
+    }
+
+    NavHost(
+        navController = rootNavController,
+        startDestination = startDestination!!
+    ) {
+        navigation(
+            startDestination = Routes.WELCOME,
+            route = Routes.AUTH_FLOW
         ) {
-            composable("home") {
-                HomeScreen(
-                    factory = factory,
-                    onMovieClick = { _: Int -> /* navegación desactivada temporalmente */ }
-                )
+            composable(Routes.WELCOME) {
+                WelcomeScreen(navController = rootNavController)
             }
 
-            composable("favorites") {
-                FavoritesScreen(
-                    factory = factory,
-                    onBack = { navController.popBackStack() },
-                    onMovieClick = { _: Int -> /* navegación desactivada temporalmente */ }
-                )
+            composable(Routes.LOGIN) {
+                LoginScreen(navController = rootNavController)
             }
 
-            composable(
-                route = "detail/{movieId}",
-                arguments = listOf(navArgument("movieId") { type = NavType.IntType })
-            ) { backStackEntry ->
-                val movieId = backStackEntry.arguments?.getInt("movieId") ?: 0
-                DetailScreen(
-                    factory = factory,
-                    movieId = movieId,
-                    onBack = { navController.popBackStack() }
-                )
+            composable(Routes.SIGNUP) {
+                SignupScreen(navController = rootNavController)
             }
+        }
+
+        composable(Routes.APP_FLOW) { //
+            MovieAppFlow(
+                factory = factory,
+                rootNavController = rootNavController
+            )
         }
     }
 }

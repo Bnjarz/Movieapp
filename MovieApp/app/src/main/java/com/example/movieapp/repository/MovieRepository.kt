@@ -12,9 +12,8 @@ class MovieRepository(context: Context) {
     private val api = RetrofitInstance.api
     private val dao = AppDatabase.getDatabase(context).favoriteMovieDao()
 
-    private val apiKey = "6764017497983147e9e1f5b87d5932f7" // 🔑 coloca aquí tu API key de TMDb
+    private val apiKey = "6764017497983147e9e1f5b87d5932f7"
 
-    // --- API (Internet) ---
     suspend fun getTrendingMovies(): List<Movie> =
         api.getTrendingMovies(apiKey).results
 
@@ -30,7 +29,6 @@ class MovieRepository(context: Context) {
     suspend fun getMovieDetail(movieId: Int): Movie =
         api.getMovieDetail(movieId, apiKey)
 
-    // --- Base de Datos (Local) ---
     fun getAllFavorites(): Flow<List<FavoriteMovie>> = dao.getAllFavorites()
 
     fun isFavorite(movieId: Int): Flow<Boolean> =
@@ -55,7 +53,7 @@ class MovieRepository(context: Context) {
             id = movie.id,
             title = movie.title,
             overview = movie.overview,
-            posterPath = movie.posterPath ?: "" // ✅ cambio aquí también
+            posterPath = movie.posterPath ?: ""
         )
         dao.deleteFavorite(favoriteMovie)
     }

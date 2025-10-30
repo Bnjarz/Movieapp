@@ -3,8 +3,11 @@ package com.example.movieapp.ui.screens
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -18,7 +21,8 @@ import com.example.movieapp.viewmodel.MainViewModelFactory
 @Composable
 fun HomeScreen(
     factory: MainViewModelFactory,
-    onMovieClick: (Int) -> Unit
+    onMovieClick: (Int) -> Unit,
+    onLogout: () -> Unit
 ) {
     val viewModel: HomeViewModel = viewModel(factory = factory)
 
@@ -28,12 +32,52 @@ fun HomeScreen(
     val romanceMovies by viewModel.romanceMovies.collectAsState()
 
     Column(
-        modifier = Modifier.verticalScroll(rememberScrollState())
+        modifier = Modifier
+            .verticalScroll(rememberScrollState())
+            .padding(top = 16.dp)
     ) {
-        MovieList("En Tendencia", trendingMovies, onMovieClick)
-        MovieList("Recientes", nowPlayingMovies, onMovieClick)
-        MovieList("Terror", horrorMovies, onMovieClick)
-        MovieList("Romance", romanceMovies, onMovieClick)
+
+        Button(
+            onClick = onLogout,
+            modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)
+        ) {
+            Text("Cerrar Sesión")
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        MovieList(
+            title = "Tendencia de la Semana",
+            movies = trendingMovies,
+            onMovieClick = onMovieClick
+        )
+
         Spacer(modifier = Modifier.height(16.dp))
+
+        MovieList(
+            title = "Recién Estrenadas",
+            movies = nowPlayingMovies,
+            onMovieClick = onMovieClick
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        MovieList(
+            title = "Terror",
+            movies = horrorMovies,
+            onMovieClick = onMovieClick
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        MovieList(
+            title = "Romance",
+            movies = romanceMovies,
+            onMovieClick = onMovieClick
+        )
+
+
+
+        Spacer(modifier = Modifier.height(64.dp))
     }
 }

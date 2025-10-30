@@ -30,14 +30,11 @@ fun DetailScreen(
     movieId: Int,
     onBack: () -> Unit
 ) {
-    // ViewModel
     val viewModel: DetailViewModel = viewModel(factory = factory)
 
-    // Observa los estados del ViewModel
     val movie by viewModel.movie.collectAsState()
     val isFavorite by viewModel.isFavorite.collectAsState()
 
-    // Cargar película al entrar
     LaunchedEffect(movieId) {
         viewModel.loadMovie(movieId)
     }
@@ -101,7 +98,6 @@ fun DetailScreen(
 
                 Spacer(modifier = Modifier.height(8.dp))
 
-                // Fecha + Calificación
                 val formattedRating = movie!!.voteAverage?.let {
                     String.format(Locale.getDefault(), "%.1f", it)
                 } ?: "N/A"

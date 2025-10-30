@@ -1,4 +1,3 @@
-// En: database/FavoriteMovie.kt
 package com.example.movieapp.database
 
 import androidx.room.Entity

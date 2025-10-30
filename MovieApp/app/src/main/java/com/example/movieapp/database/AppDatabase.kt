@@ -1,4 +1,3 @@
-// En: database/AppDatabase.kt
 package com.example.movieapp.database
 
 import android.content.Context
@@ -9,7 +8,6 @@ import androidx.room.RoomDatabase
 @Database(entities = [FavoriteMovie::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
-    // Conexión al DAO
     abstract fun favoriteMovieDao(): FavoriteMovieDao
 
 
@@ -23,7 +21,7 @@ abstract class AppDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     AppDatabase::class.java,
-                    "movie_database" // Nombre del archivo de la base de datos
+                    "movie_database"
                 ).build()
                 INSTANCE = instance
                 instance

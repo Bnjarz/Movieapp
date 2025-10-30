@@ -10,7 +10,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // ✅ Usa application (no applicationContext)
         val factory = MainViewModelFactory(application)
 
         setContent {
