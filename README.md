@@ -85,7 +85,7 @@ Se adjuntan en el repositorio los archivos necesarios para la distribución:
 2.  **Llave:** `keystore.jks`
 
 ### Captura de Evidencia (APK Generado)
-![Captura del APK Firmado](![alt text](image.png))
-*(Inserta aquí una captura de pantalla de Android Studio mostrando la notificación de "APK Generated Successfully" o la carpeta con el archivo .apk)*
+![Captura del APK Firmado](![alt text](image_apk_generado.png))
+MovieApp\app\release
 
 ---
