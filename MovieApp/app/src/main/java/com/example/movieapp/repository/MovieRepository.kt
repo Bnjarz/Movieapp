@@ -4,6 +4,7 @@ import android.content.Context
 import com.example.movieapp.database.AppDatabase
 import com.example.movieapp.database.FavoriteMovie
 import com.example.movieapp.model.Movie
+import com.example.movieapp.repository.RetrofitInstance
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
@@ -60,5 +61,9 @@ class MovieRepository(context: Context) {
 
     suspend fun removeFavorite(favoriteMovie: FavoriteMovie) {
         dao.deleteFavorite(favoriteMovie)
+    }
+
+    suspend fun updateMovieNote(movieId: Int, note: String) {
+        dao.updateNote(movieId, note)
     }
 }

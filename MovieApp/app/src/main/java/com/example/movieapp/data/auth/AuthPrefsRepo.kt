@@ -1,44 +1,57 @@
 package com.example.movieapp.data.auth
 
 import android.content.Context
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.map
 
-private val KEY_USER_EMAIL = stringPreferencesKey("user_email")
-private val KEY_USER_PASS_HASH = stringPreferencesKey("user_pass_hash")
+val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "auth_prefs")
 
-val Context.dataStore by preferencesDataStore(name = "auth_prefs")
+data class UserData(
+    val name: String,
+    val email: String
+)
 
-object AuthPrefsRepo {
+class AuthPrefsRepo(private val context: Context) {
 
+    companion object {
+        val USER_ID_KEY = stringPreferencesKey("user_id")
+        val USER_NAME_KEY = stringPreferencesKey("user_name")
+        val USER_EMAIL_KEY = stringPreferencesKey("user_email")
+    }
 
-    suspend fun saveCredentials(context: Context, email: String, passwordHash: String) {
-        context.dataStore.edit { prefs ->
-            prefs[KEY_USER_EMAIL] = email
-            prefs[KEY_USER_PASS_HASH] = passwordHash
+    suspend fun saveUserSession(name: String, email: String, userId: String) {
+        context.dataStore.edit { preferences ->
+            preferences[USER_NAME_KEY] = name
+            preferences[USER_EMAIL_KEY] = email
+            preferences[USER_ID_KEY] = userId
+        }
+        android.util.Log.d("AuthPrefsRepo", "Guardado: $name, $email")
+    }
+
+    suspend fun getUserData(): UserData? {
+        val preferences = context.dataStore.data.first()
+
+        val name = preferences[USER_NAME_KEY]
+        val email = preferences[USER_EMAIL_KEY]
+
+        android.util.Log.d("AuthPrefsRepo", "Leído: $name, $email")
+
+        return if (name != null && email != null) {
+            UserData(name, email)
+        } else {
+            null
         }
     }
 
-    suspend fun verifyCredentials(context: Context, email: String, passwordHash: String): Boolean {
-
-        val savedPrefs = context.dataStore.data.first()
-        val savedEmail = savedPrefs[KEY_USER_EMAIL]
-        val savedPassHash = savedPrefs[KEY_USER_PASS_HASH]
-
-        return savedEmail == email && savedPassHash == passwordHash
-    }
-    suspend fun clearCredentials(context: Context) {
-        context.dataStore.edit { prefs ->
-            prefs.remove(KEY_USER_EMAIL)
-            prefs.remove(KEY_USER_PASS_HASH)
+    suspend fun clearCredentials() {
+        context.dataStore.edit { preferences ->
+            preferences.clear()
         }
-    }
-    suspend fun hasCredentials(context: Context): Boolean {
-        val savedPrefs = context.dataStore.data.first()
-        val savedEmail = savedPrefs[KEY_USER_EMAIL]
-        val savedPassHash = savedPrefs[KEY_USER_PASS_HASH]
-        return savedEmail != null && savedPassHash != null
     }
 }

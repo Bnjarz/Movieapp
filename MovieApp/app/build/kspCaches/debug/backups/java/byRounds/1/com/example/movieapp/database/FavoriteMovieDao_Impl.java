@@ -7,6 +7,7 @@ import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
 import androidx.room.RoomDatabase;
 import androidx.room.RoomSQLiteQuery;
+import androidx.room.SharedSQLiteStatement;
 import androidx.room.util.CursorUtil;
 import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
@@ -35,13 +36,15 @@ public final class FavoriteMovieDao_Impl implements FavoriteMovieDao {
 
   private final EntityDeletionOrUpdateAdapter<FavoriteMovie> __deletionAdapterOfFavoriteMovie;
 
+  private final SharedSQLiteStatement __preparedStmtOfUpdateNote;
+
   public FavoriteMovieDao_Impl(@NonNull final RoomDatabase __db) {
     this.__db = __db;
     this.__insertionAdapterOfFavoriteMovie = new EntityInsertionAdapter<FavoriteMovie>(__db) {
       @Override
       @NonNull
       protected String createQuery() {
-        return "INSERT OR REPLACE INTO `favorite_movies` (`id`,`title`,`overview`,`posterPath`) VALUES (?,?,?,?)";
+        return "INSERT OR REPLACE INTO `favorite_movies` (`id`,`title`,`posterPath`,`overview`,`userNote`) VALUES (?,?,?,?,?)";
       }
 
       @Override
@@ -49,8 +52,9 @@ public final class FavoriteMovieDao_Impl implements FavoriteMovieDao {
           @NonNull final FavoriteMovie entity) {
         statement.bindLong(1, entity.getId());
         statement.bindString(2, entity.getTitle());
-        statement.bindString(3, entity.getOverview());
-        statement.bindString(4, entity.getPosterPath());
+        statement.bindString(3, entity.getPosterPath());
+        statement.bindString(4, entity.getOverview());
+        statement.bindString(5, entity.getUserNote());
       }
     };
     this.__deletionAdapterOfFavoriteMovie = new EntityDeletionOrUpdateAdapter<FavoriteMovie>(__db) {
@@ -64,6 +68,14 @@ public final class FavoriteMovieDao_Impl implements FavoriteMovieDao {
       protected void bind(@NonNull final SupportSQLiteStatement statement,
           @NonNull final FavoriteMovie entity) {
         statement.bindLong(1, entity.getId());
+      }
+    };
+    this.__preparedStmtOfUpdateNote = new SharedSQLiteStatement(__db) {
+      @Override
+      @NonNull
+      public String createQuery() {
+        final String _query = "UPDATE favorite_movies SET userNote = ? WHERE id = ?";
+        return _query;
       }
     };
   }
@@ -107,6 +119,34 @@ public final class FavoriteMovieDao_Impl implements FavoriteMovieDao {
   }
 
   @Override
+  public Object updateNote(final int movieId, final String note,
+      final Continuation<? super Unit> $completion) {
+    return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
+      @Override
+      @NonNull
+      public Unit call() throws Exception {
+        final SupportSQLiteStatement _stmt = __preparedStmtOfUpdateNote.acquire();
+        int _argIndex = 1;
+        _stmt.bindString(_argIndex, note);
+        _argIndex = 2;
+        _stmt.bindLong(_argIndex, movieId);
+        try {
+          __db.beginTransaction();
+          try {
+            _stmt.executeUpdateDelete();
+            __db.setTransactionSuccessful();
+            return Unit.INSTANCE;
+          } finally {
+            __db.endTransaction();
+          }
+        } finally {
+          __preparedStmtOfUpdateNote.release(_stmt);
+        }
+      }
+    }, $completion);
+  }
+
+  @Override
   public Flow<List<FavoriteMovie>> getAllFavorites() {
     final String _sql = "SELECT * FROM favorite_movies";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
@@ -118,8 +158,9 @@ public final class FavoriteMovieDao_Impl implements FavoriteMovieDao {
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
-          final int _cursorIndexOfOverview = CursorUtil.getColumnIndexOrThrow(_cursor, "overview");
           final int _cursorIndexOfPosterPath = CursorUtil.getColumnIndexOrThrow(_cursor, "posterPath");
+          final int _cursorIndexOfOverview = CursorUtil.getColumnIndexOrThrow(_cursor, "overview");
+          final int _cursorIndexOfUserNote = CursorUtil.getColumnIndexOrThrow(_cursor, "userNote");
           final List<FavoriteMovie> _result = new ArrayList<FavoriteMovie>(_cursor.getCount());
           while (_cursor.moveToNext()) {
             final FavoriteMovie _item;
@@ -127,11 +168,13 @@ public final class FavoriteMovieDao_Impl implements FavoriteMovieDao {
             _tmpId = _cursor.getInt(_cursorIndexOfId);
             final String _tmpTitle;
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
-            final String _tmpOverview;
-            _tmpOverview = _cursor.getString(_cursorIndexOfOverview);
             final String _tmpPosterPath;
             _tmpPosterPath = _cursor.getString(_cursorIndexOfPosterPath);
-            _item = new FavoriteMovie(_tmpId,_tmpTitle,_tmpOverview,_tmpPosterPath);
+            final String _tmpOverview;
+            _tmpOverview = _cursor.getString(_cursorIndexOfOverview);
+            final String _tmpUserNote;
+            _tmpUserNote = _cursor.getString(_cursorIndexOfUserNote);
+            _item = new FavoriteMovie(_tmpId,_tmpTitle,_tmpPosterPath,_tmpOverview,_tmpUserNote);
             _result.add(_item);
           }
           return _result;
@@ -149,7 +192,7 @@ public final class FavoriteMovieDao_Impl implements FavoriteMovieDao {
 
   @Override
   public Flow<Integer> isFavorite(final int movieId) {
-    final String _sql = "SELECT COUNT(id) FROM favorite_movies WHERE id = ?";
+    final String _sql = "SELECT COUNT(*) FROM favorite_movies WHERE id = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     _statement.bindLong(_argIndex, movieId);

@@ -2,21 +2,21 @@ package com.example.movieapp.viewmodel.auth
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.ViewModelProvider
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import android.util.Patterns
-import android.content.Context
 import com.example.movieapp.data.auth.AuthPrefsRepo
+import com.example.movieapp.model.RegisterRequest
+import com.example.movieapp.network.BackendClient
+
 data class SignupFormState(
     val nombreCompleto: String = "",
     val email: String = "",
     val contrasena: String = "",
     val isLoading: Boolean = false
 )
-
 
 data class SignupFormErrors(
     val nombreCompletoError: String? = null,
@@ -25,13 +25,13 @@ data class SignupFormErrors(
     val globalError: String? = null
 )
 
-class SignupViewModel(private val context: Context) : ViewModel() {
+class SignupViewModel(private val authRepo: AuthPrefsRepo) : ViewModel() {
+
     private val _state = MutableStateFlow(SignupFormState())
     val state: StateFlow<SignupFormState> = _state.asStateFlow()
+
     private val _errors = MutableStateFlow(SignupFormErrors())
     val errors: StateFlow<SignupFormErrors> = _errors.asStateFlow()
-
-
 
     fun onNombreCompletoChange(v: String) {
         _state.value = _state.value.copy(nombreCompleto = v)
@@ -42,7 +42,6 @@ class SignupViewModel(private val context: Context) : ViewModel() {
 
     fun onEmailChange(v: String) {
         _state.value = _state.value.copy(email = v)
-
         if (_errors.value.emailError != null) {
             _errors.value = _errors.value.copy(emailError = null)
         }
@@ -50,7 +49,6 @@ class SignupViewModel(private val context: Context) : ViewModel() {
 
     fun onContrasenaChange(v: String) {
         _state.value = _state.value.copy(contrasena = v)
-
         if (_errors.value.contrasenaError != null) {
             _errors.value = _errors.value.copy(contrasenaError = null)
         }
@@ -96,36 +94,34 @@ class SignupViewModel(private val context: Context) : ViewModel() {
             _state.value = _state.value.copy(isLoading = true)
 
             try {
-                AuthPrefsRepo.saveCredentials(
-                    context = context,
-                    email = _state.value.email,
-                    passwordHash = _state.value.contrasena
+                val response = BackendClient.api.register(
+                    RegisterRequest(
+                        nombre = _state.value.nombreCompleto,
+                        email = _state.value.email,
+                        password = _state.value.contrasena
+                    )
                 )
-                onSuccess()
-                resetState()
+
+                if (response.isSuccessful && response.body() != null) {
+                    val user = response.body()!!
+
+                    authRepo.saveUserSession(user.nombre, user.email, user.id.toString())
+                    onSuccess()
+                    resetState()
+                } else {
+                    _errors.value = _errors.value.copy(globalError = "El correo ya está registrado")
+                }
 
             } catch (e: Exception) {
-
-                _errors.value = _errors.value.copy(globalError = "Error al guardar datos. Inténtalo de nuevo.")
+                _errors.value = _errors.value.copy(globalError = "Error de conexión: ${e.message}")
             } finally {
-                _state.value = _state.value.copy(isLoading = false)
+                _state.value = _state.value.copy(isLoading = false) // Ocultamos carga
             }
         }
     }
 
-
     fun resetState() {
         _state.value = SignupFormState()
         _errors.value = SignupFormErrors()
-    }
-}
-
-class SignupViewModelFactory(private val context: Context) : ViewModelProvider.Factory {
-    override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(SignupViewModel::class.java)) {
-            @Suppress("UNCHECKED_CAST")
-            return SignupViewModel(context) as T
-        }
-        throw IllegalArgumentException("Unknown ViewModel class")
     }
 }

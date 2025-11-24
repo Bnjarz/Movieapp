@@ -1,182 +1,112 @@
 package com.example.movieapp.ui.screens.auth
 
-
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.compose.ui.platform.LocalContext
-import com.example.movieapp.viewmodel.auth.SignupViewModelFactory
-
-import androidx.navigation.NavHostController
-
-import com.example.movieapp.R
-import com.example.movieapp.ui.components.CButton
-import com.example.movieapp.ui.components.CTextField
-
-import com.example.movieapp.ui.theme.AlegreyaFontFamily
-import com.example.movieapp.ui.theme.AlegreyaSansFontFamily
+import androidx.navigation.NavController
+import com.example.movieapp.viewmodel.MainViewModelFactory
 import com.example.movieapp.viewmodel.auth.SignupViewModel
 
 @Composable
 fun SignupScreen(
-    navController: NavHostController,
-){
-    val context = LocalContext.current
-    val viewModel: SignupViewModel = viewModel(factory = SignupViewModelFactory(context))
-    val state = viewModel.state.collectAsState().value
-    val errors = viewModel.errors.collectAsState().value
+    navController: NavController,
+    factory: MainViewModelFactory
+) {
+    val viewModel: SignupViewModel = viewModel(factory = factory)
 
-    Surface (
-        modifier = Modifier.fillMaxSize()
-    ){
-        Box(modifier = Modifier.fillMaxSize()){
-            Image(painter = painterResource(id = R.drawable.fondo2),
-                null,
-                contentScale = ContentScale.FillBounds,
-                modifier = Modifier.fillMaxSize()
+    val state by viewModel.state.collectAsState()
+    val errors by viewModel.errors.collectAsState()
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text("Crear Cuenta", style = MaterialTheme.typography.headlineMedium)
+
+        Spacer(modifier = Modifier.height(32.dp))
+
+        OutlinedTextField(
+            value = state.nombreCompleto, // Usamos tu estado
+            onValueChange = { viewModel.onNombreCompletoChange(it) }, // Usamos tu función
+            label = { Text("Nombre completo") },
+            modifier = Modifier.fillMaxWidth(),
+            isError = errors.nombreCompletoError != null,
+            singleLine = true
+        )
+        if (errors.nombreCompletoError != null) {
+            Text(text = errors.nombreCompletoError!!, color = MaterialTheme.colorScheme.error)
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        OutlinedTextField(
+            value = state.email,
+            onValueChange = { viewModel.onEmailChange(it) },
+            label = { Text("Correo electrónico") },
+            modifier = Modifier.fillMaxWidth(),
+            isError = errors.emailError != null,
+            singleLine = true
+        )
+        if (errors.emailError != null) {
+            Text(text = errors.emailError!!, color = MaterialTheme.colorScheme.error)
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        OutlinedTextField(
+            value = state.contrasena,
+            onValueChange = { viewModel.onContrasenaChange(it) },
+            label = { Text("Contraseña") },
+            modifier = Modifier.fillMaxWidth(),
+            visualTransformation = PasswordVisualTransformation(),
+            isError = errors.contrasenaError != null,
+            singleLine = true
+        )
+        if (errors.contrasenaError != null) {
+            Text(text = errors.contrasenaError!!, color = MaterialTheme.colorScheme.error)
+        }
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        if (errors.globalError != null) {
+            Text(
+                text = errors.globalError!!,
+                color = MaterialTheme.colorScheme.error,
+                modifier = Modifier.padding(bottom = 16.dp)
             )
-            Column (
-                horizontalAlignment = Alignment.CenterHorizontally,
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(horizontal = 24.dp)
-            ){
-                Image(painter = painterResource(id = R.drawable.logo ),
-                    contentDescription = null,
-                    modifier = Modifier
-                        .padding(top = 60.dp)
-                        .height(80.dp)
-                        .align(Alignment.Start)
-                        .offset(x=(-20).dp)
-                        .padding(bottom = 24.dp)
-                )
-                Text(text="Registrarse",
-                    style = TextStyle(
-                        fontSize = 28.sp,
-                        fontFamily = AlegreyaFontFamily,
-                        fontWeight = FontWeight(500),
-                        color = Color.White
-                    ),
-                    modifier = Modifier.align(Alignment.Start)
-                )
-                Text("Registrate ahora para poder acceder al catálogo.",
-                    style = TextStyle(
-                        fontSize = 20.sp,
-                        fontFamily = AlegreyaSansFontFamily,
-                        color = Color(0xB2FFFFFF)
-                    ),
-                    modifier = Modifier
-                        .align(Alignment.Start)
-                        .padding(top = 16.dp)
-                        .padding(bottom = 24.dp)
-                )
+        }
 
-                CTextField(
-                    hint = "Nombre Completo",
-                    value = state.nombreCompleto,
-                    onValueChange = viewModel::onNombreCompletoChange,
-                    isError = errors.nombreCompletoError != null,
-                    errorText = errors.nombreCompletoError
-                )
-
-                Spacer(modifier = Modifier.height(12.dp))
-
-                CTextField(
-                    hint = "Gmail",
-                    value = state.email,
-                    onValueChange = viewModel::onEmailChange,
-                    isError = errors.emailError != null,
-                    errorText = errors.emailError
-                )
-
-                Spacer(modifier = Modifier.height(12.dp))
-
-                CTextField(
-                    hint = "Contraseña",
-                    value = state.contrasena,
-                    onValueChange = viewModel::onContrasenaChange,
-                    isError = errors.contrasenaError != null,
-                    errorText = errors.contrasenaError,
-                    isPassword = true
-                )
-
-                Spacer(modifier = Modifier.height(24.dp))
-
-                CButton(
-                    text = if (state.isLoading) "Registrando..." else "Registrarse",
-                    enabled = !state.isLoading,
-                    onClick = {
-                        viewModel.onSignupClick {
-                            navController.navigate("login") {
-                                popUpTo(navController.graph.startDestinationId) {
-                                    inclusive = true
-                                }
-                            }
-                        }
+        Button(
+            onClick = {
+                viewModel.onSignupClick {
+                    navController.navigate("home") {
+                        popUpTo("welcome") { inclusive = true }
                     }
-                )
-                if (errors.globalError != null) {
-                    Text(
-                        text = errors.globalError,
-                        style = TextStyle(
-                            fontSize = 16.sp,
-                            fontFamily = AlegreyaSansFontFamily,
-                            color = Color.Red,
-                            fontWeight = FontWeight.Bold
-                        ),
-                        modifier = Modifier.padding(top = 12.dp)
-                    )
                 }
-
-                Row (
-                    modifier = Modifier.padding(top=12.dp,bottom= 52.dp)
-                ){
-                    Text("Ya tienes una cuenta? ",
-                        style = TextStyle(
-                            fontSize = 18.sp,
-                            fontFamily = AlegreyaSansFontFamily,
-                            color = Color.White
-                        )
-                    )
-
-                    Text("Inicia Sesion",
-                        style = TextStyle(
-                            fontSize = 18.sp,
-                            fontFamily = AlegreyaSansFontFamily,
-                            fontWeight = FontWeight(800),
-                            color = Color.White
-                        ),
-                        modifier = Modifier.clickable{
-                            navController.navigate("login")
-                        }
-                    )
-                }
-
-
+            },
+            modifier = Modifier.fillMaxWidth(),
+            enabled = !state.isLoading
+        ) {
+            if (state.isLoading) {
+                CircularProgressIndicator(modifier = Modifier.size(24.dp), color = Color.White)
+            } else {
+                Text("Registrarse")
             }
+        }
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        TextButton(onClick = { navController.popBackStack() }) {
+            Text("¿Ya tienes cuenta? Inicia sesión")
         }
     }
-
 }

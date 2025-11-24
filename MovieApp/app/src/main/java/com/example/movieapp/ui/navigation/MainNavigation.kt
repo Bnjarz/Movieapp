@@ -1,63 +1,96 @@
 package com.example.movieapp.ui.navigation
 
-import androidx.compose.runtime.*
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.navigation
-import com.example.movieapp.viewmodel.MainViewModelFactory
-import com.example.movieapp.data.auth.AuthPrefsRepo
+import androidx.navigation.navArgument
+import com.example.movieapp.ui.screens.DetailScreen
+import com.example.movieapp.ui.screens.FavoritesScreen
+import com.example.movieapp.ui.screens.HomeScreen
+import com.example.movieapp.ui.screens.ProfileScreen
 import com.example.movieapp.ui.screens.auth.LoginScreen
-import com.example.movieapp.ui.screens.auth.WelcomeScreen
 import com.example.movieapp.ui.screens.auth.SignupScreen
+import com.example.movieapp.ui.screens.auth.WelcomeScreen
+import com.example.movieapp.viewmodel.MainViewModelFactory
 
 @Composable
 fun MainNavigation(factory: MainViewModelFactory) {
-    val rootNavController = rememberNavController()
-    val context = LocalContext.current
+    val navController = rememberNavController()
 
-    var startDestination: String? by remember { mutableStateOf(null) }
+    val navBackStackEntry by navController.currentBackStackEntryAsState()
+    val currentRoute = navBackStackEntry?.destination?.route
 
-    LaunchedEffect(Unit) {
-        val hasCreds = AuthPrefsRepo.hasCredentials(context)
-        startDestination = if (hasCreds) {
-            Routes.APP_FLOW
-        } else {
-            Routes.AUTH_FLOW
+    val showBottomBar = currentRoute in listOf("home", "favorites", "profile")
+
+    Scaffold(
+        bottomBar = {
+            if (showBottomBar) {
+                BottomNavigationBar(navController = navController)
+            }
         }
-    }
-
-    if (startDestination == null) {
-        return
-    }
-
-    NavHost(
-        navController = rootNavController,
-        startDestination = startDestination!!
-    ) {
-        navigation(
-            startDestination = Routes.WELCOME,
-            route = Routes.AUTH_FLOW
+    ) { paddingValues ->
+        NavHost(
+            navController = navController,
+            startDestination = "welcome",
+            modifier = Modifier.padding(paddingValues)
         ) {
-            composable(Routes.WELCOME) {
-                WelcomeScreen(navController = rootNavController)
+            composable("welcome") {
+                WelcomeScreen(navController)
             }
 
-            composable(Routes.LOGIN) {
-                LoginScreen(navController = rootNavController)
+            composable("login") {
+                LoginScreen(navController, factory)
+            }
+            composable("signup") {
+                SignupScreen(navController, factory)
             }
 
-            composable(Routes.SIGNUP) {
-                SignupScreen(navController = rootNavController)
+            composable("home") {
+                HomeScreen(
+                    factory = factory,
+                    onMovieClick = { movieId ->
+                        navController.navigate("detail/$movieId")
+                    },
+                    onLogout = {
+                        navController.navigate("welcome") {
+                            popUpTo("home") { inclusive = true }
+                        }
+                    }
+                )
             }
-        }
 
-        composable(Routes.APP_FLOW) { //
-            MovieAppFlow(
-                factory = factory,
-                rootNavController = rootNavController
-            )
+            composable("favorites") {
+                FavoritesScreen(
+                    factory = factory,
+                    onBack = { navController.popBackStack() },
+                    onMovieClick = { movieId ->
+                        navController.navigate("detail/$movieId")
+                    }
+                )
+            }
+
+            composable("profile") {
+                ProfileScreen(factory = factory)
+            }
+
+            composable(
+                route = "detail/{movieId}",
+                arguments = listOf(navArgument("movieId") { type = NavType.IntType })
+            ) { backStackEntry ->
+                val movieId = backStackEntry.arguments?.getInt("movieId") ?: 0
+                DetailScreen(
+                    movieId = movieId,
+                    factory = factory,
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }

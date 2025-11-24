@@ -15,7 +15,7 @@ object RetrofitClient {
         val original = chain.request()
         val httpUrl = original.url.newBuilder()
             .addQueryParameter("api_key", API_KEY)
-            .addQueryParameter("language", "es-ES") // ¡Resultados en español!
+            .addQueryParameter("language", "es-ES")
             .build()
 
         val requestBuilder = original.newBuilder().url(httpUrl)

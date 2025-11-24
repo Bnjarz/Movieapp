@@ -46,15 +46,16 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3:1.3.0")
-
+    implementation("androidx.compose.material:material-icons-extended:1.6.0")
     implementation("androidx.activity:activity-compose:1.9.3")
     implementation("androidx.navigation:navigation-compose:2.8.3")
     implementation("com.google.accompanist:accompanist-navigation-animation:0.33.2-alpha")
 
     implementation("io.coil-kt:coil-compose:2.7.0")
+    implementation("com.google.android.material:material:1.9.0")
 
     implementation("androidx.datastore:datastore-preferences:1.1.1")
-
+    implementation("io.coil-kt:coil-compose:2.6.0")
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
