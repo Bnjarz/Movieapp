@@ -49,135 +49,134 @@
 31-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:13:9-43
 32        android:label="@string/app_name"
 32-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:14:9-41
-33        android:testOnly="true"
-34        android:theme="@style/Theme.MovieApp"
-34-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:15:9-46
-35        android:usesCleartextTraffic="true" >
-35-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:16:9-44
-36        <activity
-36-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:19:9-27:20
-37            android:name="com.example.movieapp.MainActivity"
-37-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:20:13-41
-38            android:exported="true"
-38-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:21:13-36
-39            android:theme="@style/Theme.MovieApp" >
-39-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:22:13-50
-40            <intent-filter>
-40-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:23:13-26:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:24:17-69
-41-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:24:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:25:17-77
-43-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:25:27-74
-44            </intent-filter>
-45        </activity>
-46
-47        <provider
-48            android:name="androidx.core.content.FileProvider"
-48-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:30:13-62
-49            android:authorities="com.example.movieapp.provider"
-49-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:31:13-60
-50            android:exported="false"
-50-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:32:13-37
-51            android:grantUriPermissions="true" >
-51-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:33:13-47
-52            <meta-data
-52-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:34:13-36:54
-53                android:name="android.support.FILE_PROVIDER_PATHS"
-53-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:35:17-67
-54                android:resource="@xml/file_paths" />
-54-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:36:17-51
-55        </provider>
-56
-57        <activity
-57-->[androidx.compose.ui:ui-test-manifest:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b1b7d7d11ba960ee4be25382d316aee5\transformed\ui-test-manifest-1.7.4\AndroidManifest.xml:23:9-25:39
-58            android:name="androidx.activity.ComponentActivity"
-58-->[androidx.compose.ui:ui-test-manifest:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b1b7d7d11ba960ee4be25382d316aee5\transformed\ui-test-manifest-1.7.4\AndroidManifest.xml:24:13-63
-59            android:exported="true" />
-59-->[androidx.compose.ui:ui-test-manifest:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b1b7d7d11ba960ee4be25382d316aee5\transformed\ui-test-manifest-1.7.4\AndroidManifest.xml:25:13-36
-60        <activity
-60-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\903061e86430cd02c742b0ac8091c6ce\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-61            android:name="androidx.compose.ui.tooling.PreviewActivity"
-61-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\903061e86430cd02c742b0ac8091c6ce\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-62            android:exported="true" />
-62-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\903061e86430cd02c742b0ac8091c6ce\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-63
-64        <provider
-64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-65            android:name="androidx.startup.InitializationProvider"
-65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-66            android:authorities="com.example.movieapp.androidx-startup"
-66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-67            android:exported="false" >
-67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-68            <meta-data
-68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-70                android:value="androidx.startup" />
-70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-71            <meta-data
-71-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f6525db28770588f4a8c7466e489321c\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:29:13-31:52
-72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-72-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f6525db28770588f4a8c7466e489321c\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:30:17-78
-73                android:value="androidx.startup" />
-73-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f6525db28770588f4a8c7466e489321c\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:31:17-49
-74            <meta-data
-74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-76                android:value="androidx.startup" />
-76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-77        </provider>
-78
-79        <service
-79-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
-80            android:name="androidx.room.MultiInstanceInvalidationService"
-80-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
-81            android:directBootAware="true"
-81-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
-82            android:exported="false" />
-82-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
-83
-84        <receiver
-84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-86            android:directBootAware="false"
-86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-87            android:enabled="true"
-87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-88            android:exported="true"
-88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-89            android:permission="android.permission.DUMP" >
-89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-90            <intent-filter>
-90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-92            </intent-filter>
-93            <intent-filter>
-93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-94                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-94-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-95            </intent-filter>
-96            <intent-filter>
-96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-97                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-98            </intent-filter>
-99            <intent-filter>
-99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-100                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-101            </intent-filter>
-102        </receiver>
-103    </application>
-104
-105</manifest>
+33        android:theme="@style/Theme.MovieApp"
+33-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:15:9-46
+34        android:usesCleartextTraffic="true" >
+34-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:16:9-44
+35        <activity
+35-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:19:9-27:20
+36            android:name="com.example.movieapp.MainActivity"
+36-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:20:13-41
+37            android:exported="true"
+37-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:21:13-36
+38            android:theme="@style/Theme.MovieApp" >
+38-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:22:13-50
+39            <intent-filter>
+39-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:23:13-26:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:24:17-69
+40-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:24:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:25:17-77
+42-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:25:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <provider
+47            android:name="androidx.core.content.FileProvider"
+47-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:30:13-62
+48            android:authorities="com.example.movieapp.provider"
+48-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:31:13-60
+49            android:exported="false"
+49-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:32:13-37
+50            android:grantUriPermissions="true" >
+50-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:33:13-47
+51            <meta-data
+51-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:34:13-36:54
+52                android:name="android.support.FILE_PROVIDER_PATHS"
+52-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:35:17-67
+53                android:resource="@xml/file_paths" />
+53-->C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\AndroidManifest.xml:36:17-51
+54        </provider>
+55
+56        <activity
+56-->[androidx.compose.ui:ui-test-manifest:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b1b7d7d11ba960ee4be25382d316aee5\transformed\ui-test-manifest-1.7.4\AndroidManifest.xml:23:9-25:39
+57            android:name="androidx.activity.ComponentActivity"
+57-->[androidx.compose.ui:ui-test-manifest:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b1b7d7d11ba960ee4be25382d316aee5\transformed\ui-test-manifest-1.7.4\AndroidManifest.xml:24:13-63
+58            android:exported="true" />
+58-->[androidx.compose.ui:ui-test-manifest:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b1b7d7d11ba960ee4be25382d316aee5\transformed\ui-test-manifest-1.7.4\AndroidManifest.xml:25:13-36
+59        <activity
+59-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\903061e86430cd02c742b0ac8091c6ce\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+60            android:name="androidx.compose.ui.tooling.PreviewActivity"
+60-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\903061e86430cd02c742b0ac8091c6ce\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+61            android:exported="true" />
+61-->[androidx.compose.ui:ui-tooling-android:1.7.4] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\903061e86430cd02c742b0ac8091c6ce\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+62
+63        <provider
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+64            android:name="androidx.startup.InitializationProvider"
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+65            android:authorities="com.example.movieapp.androidx-startup"
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+66            android:exported="false" >
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+67            <meta-data
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+69                android:value="androidx.startup" />
+69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+70            <meta-data
+70-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f6525db28770588f4a8c7466e489321c\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+71-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f6525db28770588f4a8c7466e489321c\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:30:17-78
+72                android:value="androidx.startup" />
+72-->[androidx.lifecycle:lifecycle-process:2.8.6] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f6525db28770588f4a8c7466e489321c\transformed\lifecycle-process-2.8.6\AndroidManifest.xml:31:17-49
+73            <meta-data
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+75                android:value="androidx.startup" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+76        </provider>
+77
+78        <service
+78-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+79            android:name="androidx.room.MultiInstanceInvalidationService"
+79-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+80            android:directBootAware="true"
+80-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+81            android:exported="false" />
+81-->[androidx.room:room-runtime:2.6.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+82
+83        <receiver
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+84            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+85            android:directBootAware="false"
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+86            android:enabled="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+87            android:exported="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+88            android:permission="android.permission.DUMP" >
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+90                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+93                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+93-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+96                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+99                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+100            </intent-filter>
+101        </receiver>
+102    </application>
+103
+104</manifest>
