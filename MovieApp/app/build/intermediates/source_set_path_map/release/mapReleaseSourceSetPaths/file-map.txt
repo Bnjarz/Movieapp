@@ -1,0 +1,76 @@
+com.example.movieapp-ui-geometry-release-0 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\00fbf5443f52cc75f3ee721044c2e7f1\transformed\ui-geometry-release\res
+com.example.movieapp-lifecycle-viewmodel-savedstate-2.8.6-1 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\0326b38f7ead82c88a0042c0c4c0ad57\transformed\lifecycle-viewmodel-savedstate-2.8.6\res
+com.example.movieapp-constraintlayout-2.0.1-2 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\05a818222477bad45ad25706b9ba1d86\transformed\constraintlayout-2.0.1\res
+com.example.movieapp-viewpager2-1.0.0-3 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\0f38b711402797bb51b85b37af5b77ed\transformed\viewpager2-1.0.0\res
+com.example.movieapp-activity-compose-1.9.3-4 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\113b49bbd8071ac0781e21bbe1363686\transformed\activity-compose-1.9.3\res
+com.example.movieapp-annotation-experimental-1.4.1-5 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\11e5c492a52ace128b58d53086b1807f\transformed\annotation-experimental-1.4.1\res
+com.example.movieapp-material-ripple-release-6 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\127e561ae89e9632512c3b87aebe4f48\transformed\material-ripple-release\res
+com.example.movieapp-core-1.13.1-7 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\18fc3ee3042ce463871f5e9a8f9d0ee8\transformed\core-1.13.1\res
+com.example.movieapp-ui-unit-release-8 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\199fdbf87ba01c62c734292218595d35\transformed\ui-unit-release\res
+com.example.movieapp-lifecycle-viewmodel-compose-release-9 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\1b1eabf99e4952208ebe3091e39fd872\transformed\lifecycle-viewmodel-compose-release\res
+com.example.movieapp-runtime-saveable-release-10 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\1fb8b1d76c75caece4f2d88f0aa3f69f\transformed\runtime-saveable-release\res
+com.example.movieapp-material-release-11 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\22661144f8d677f9b698268ef0e5c030\transformed\material-release\res
+com.example.movieapp-ui-util-release-12 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\2565013f533822671450cb0dbcbf3442\transformed\ui-util-release\res
+com.example.movieapp-appcompat-resources-1.6.1-13 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\30fcce188c305b5172e756188aa20e9d\transformed\appcompat-resources-1.6.1\res
+com.example.movieapp-sqlite-2.4.0-14 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\3528d9df4d0e2ae7be8b9f47609f5d70\transformed\sqlite-2.4.0\res
+com.example.movieapp-ui-graphics-release-15 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\3841f94a961248e4ef99390c0c244d1a\transformed\ui-graphics-release\res
+com.example.movieapp-navigation-compose-2.8.3-16 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\38f3d48ae1c0053dd881144bdf90433b\transformed\navigation-compose-2.8.3\res
+com.example.movieapp-sqlite-framework-2.4.0-17 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\39935e449c940806f36504c5072f81bb\transformed\sqlite-framework-2.4.0\res
+com.example.movieapp-core-ktx-1.13.1-18 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\3ba02f2b739a405b7fd1bad6a750502d\transformed\core-ktx-1.13.1\res
+com.example.movieapp-drawerlayout-1.1.1-19 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\475b8c3dbe9c4c13c65637978b893bbb\transformed\drawerlayout-1.1.1\res
+com.example.movieapp-lifecycle-viewmodel-ktx-2.8.6-20 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\48575817d6126724db22086679fdc698\transformed\lifecycle-viewmodel-ktx-2.8.6\res
+com.example.movieapp-foundation-release-21 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\49370a4f7eab980b745a2409163c0b59\transformed\foundation-release\res
+com.example.movieapp-graphics-path-1.0.1-22 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\4b3e73003e64f9d1f6ddaa539e5dd8cc\transformed\graphics-path-1.0.1\res
+com.example.movieapp-room-ktx-2.6.1-23 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\519d3c101c6b6db66476e5d93187ee8a\transformed\room-ktx-2.6.1\res
+com.example.movieapp-lifecycle-runtime-compose-release-24 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\56f5359fa3d9fced331e7127294fcdc7\transformed\lifecycle-runtime-compose-release\res
+com.example.movieapp-savedstate-ktx-1.2.1-25 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\57bfe60aa9ed78b7e5b32961846a0487\transformed\savedstate-ktx-1.2.1\res
+com.example.movieapp-lifecycle-livedata-2.8.6-26 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\57f284449f35670f865e6d027ec9b98f\transformed\lifecycle-livedata-2.8.6\res
+com.example.movieapp-activity-1.9.3-27 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\5862babe21d02de359f5dc8b90d93cca\transformed\activity-1.9.3\res
+com.example.movieapp-emoji2-views-helper-1.3.0-28 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\5f0b5fbf3c01c1a7b53bf8971b96c034\transformed\emoji2-views-helper-1.3.0\res
+com.example.movieapp-animation-core-release-29 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\5f8c7d431a7731327cb884d33025258b\transformed\animation-core-release\res
+com.example.movieapp-navigation-common-ktx-2.8.3-30 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\5ffc0a1d85f1a180420bddd85c938bf1\transformed\navigation-common-ktx-2.8.3\res
+com.example.movieapp-datastore-preferences-release-31 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\63082a51f08e2cd14e6b59b11d883772\transformed\datastore-preferences-release\res
+com.example.movieapp-savedstate-1.2.1-32 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\66c61d7f1b2fdf0946e85e3019501f19\transformed\savedstate-1.2.1\res
+com.example.movieapp-navigation-runtime-2.8.3-33 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\672c6cb13b483d08f3f10bef991ce854\transformed\navigation-runtime-2.8.3\res
+com.example.movieapp-material-1.9.0-34 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\6bd659d651e25e5d82701dfcd6e1d589\transformed\material-1.9.0\res
+com.example.movieapp-material3-release-35 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\6c10180b34e14935b173119fc0d2692d\transformed\material3-release\res
+com.example.movieapp-coordinatorlayout-1.1.0-36 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\6d0076eb8563407978297198b2536433\transformed\coordinatorlayout-1.1.0\res
+com.example.movieapp-foundation-layout-release-37 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\6f4b6479edb7d15e0f1d8f613dcc50f2\transformed\foundation-layout-release\res
+com.example.movieapp-room-runtime-2.6.1-38 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\70f6eacc17b8c52fcc34e8dc9550aa6a\transformed\room-runtime-2.6.1\res
+com.example.movieapp-lifecycle-viewmodel-release-39 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\7b7462e328a8c5a0c99b0f32f256f471\transformed\lifecycle-viewmodel-release\res
+com.example.movieapp-appcompat-1.6.1-40 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\9087c4a6dfc4a9e8cec4f61c641aa5b6\transformed\appcompat-1.6.1\res
+com.example.movieapp-lifecycle-runtime-release-41 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\93093ebb7f487d38c4759110ead214b2\transformed\lifecycle-runtime-release\res
+com.example.movieapp-activity-ktx-1.9.3-42 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\9777f0f5369562f57ae2cb692f0b1cec\transformed\activity-ktx-1.9.3\res
+com.example.movieapp-recyclerview-1.1.0-43 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\9c0109fc9a5c285a68573bc376a9bc63\transformed\recyclerview-1.1.0\res
+com.example.movieapp-lifecycle-livedata-core-ktx-2.8.6-44 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\a2e2b23bdbe28c8a61345e8980aa5dcf\transformed\lifecycle-livedata-core-ktx-2.8.6\res
+com.example.movieapp-customview-poolingcontainer-1.0.0-45 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\a3d4a4b3403ea2bbb922c3384cc6df4b\transformed\customview-poolingcontainer-1.0.0\res
+com.example.movieapp-navigation-runtime-ktx-2.8.3-46 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b2289facdb77d4ba72ec1a81b673a16f\transformed\navigation-runtime-ktx-2.8.3\res
+com.example.movieapp-datastore-core-release-47 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b33ae257f6d57f7935f934f859f8fa89\transformed\datastore-core-release\res
+com.example.movieapp-runtime-release-48 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\b3ec115331f7c8e63fc151853f7b035f\transformed\runtime-release\res
+com.example.movieapp-datastore-release-49 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\be45551794d36cbb600ec774419c5441\transformed\datastore-release\res
+com.example.movieapp-lifecycle-runtime-ktx-release-50 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\c1f757bbb3cb5cf3412178a9135c48e6\transformed\lifecycle-runtime-ktx-release\res
+com.example.movieapp-animation-release-51 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\c8d301847ec522d817e4c62556bf0d86\transformed\animation-release\res
+com.example.movieapp-profileinstaller-1.3.1-52 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\cb3ff218d69dd239e19c1d07d4461fe4\transformed\profileinstaller-1.3.1\res
+com.example.movieapp-ui-release-53 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\dbf6c354a61084bcb37894640f71f5d6\transformed\ui-release\res
+com.example.movieapp-startup-runtime-1.1.1-54 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\dc009468e661f76771a7f901f3ea8e47\transformed\startup-runtime-1.1.1\res
+com.example.movieapp-fragment-1.3.6-55 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\deb0271c106c40e9067aad09a1f8aa69\transformed\fragment-1.3.6\res
+com.example.movieapp-transition-1.2.0-56 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\e9eda06b083ad27d0ec3131b38e2686d\transformed\transition-1.2.0\res
+com.example.movieapp-material-icons-core-release-57 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\ec2b959c9fd89c9c2b72a27f03dbce90\transformed\material-icons-core-release\res
+com.example.movieapp-lifecycle-livedata-core-2.8.6-58 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\ef455956f6354f28b1632cc5a9c66e20\transformed\lifecycle-livedata-core-2.8.6\res
+com.example.movieapp-navigation-common-2.8.3-59 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f184ac6602fea3a2dde24e2dbf7442eb\transformed\navigation-common-2.8.3\res
+com.example.movieapp-ui-text-release-60 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f3623a5ca0e861f187617dd31174e305\transformed\ui-text-release\res
+com.example.movieapp-emoji2-1.3.0-61 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f364a08de92fcc5226a8597f80bc1379\transformed\emoji2-1.3.0\res
+com.example.movieapp-material-icons-extended-release-62 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f4040135e1735b4b987aa3f189c4579e\transformed\material-icons-extended-release\res
+com.example.movieapp-ui-tooling-preview-release-63 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f4c6afc9e8c947e7e059d655badf2e07\transformed\ui-tooling-preview-release\res
+com.example.movieapp-lifecycle-process-2.8.6-64 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f6525db28770588f4a8c7466e489321c\transformed\lifecycle-process-2.8.6\res
+com.example.movieapp-coil-base-2.7.0-65 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\f916442ce1f78ba899c8f3664d11ddfd\transformed\coil-base-2.7.0\res
+com.example.movieapp-core-runtime-2.2.0-66 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\fe356d1bac5fa6d7e6c20129456cf163\transformed\core-runtime-2.2.0\res
+com.example.movieapp-cardview-1.0.0-67 C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\8.13\transforms\ff82b9e17e207e3e1009a6e033f06147\transformed\cardview-1.0.0\res
+com.example.movieapp-pngs-68 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\build\generated\res\pngs\release
+com.example.movieapp-resValues-69 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\build\generated\res\resValues\release
+com.example.movieapp-updated_navigation_xml-70 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\build\generated\updated_navigation_xml\release
+com.example.movieapp-packageReleaseResources-71 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.example.movieapp-packageReleaseResources-72 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.example.movieapp-release-73 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.example.movieapp-main-74 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\main\res
+com.example.movieapp-release-75 C:\Users\ruzbe\Desktop\New folder\MovieApp\app\src\release\res

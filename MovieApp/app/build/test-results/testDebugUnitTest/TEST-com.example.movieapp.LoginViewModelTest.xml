@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.movieapp.LoginViewModelTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-24T19:24:37.551Z" hostname="DESKTOP-PVJRPLI" time="2.574">
+  <properties/>
+  <testcase name="login exitoso cambia el estado a Success y guarda sesion" classname="com.example.movieapp.LoginViewModelTest" time="2.533"/>
+  <testcase name="login fallido cambia el estado a Error" classname="com.example.movieapp.LoginViewModelTest" time="0.04"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+WARNING: A Java agent has been loaded dynamically (C:\Users\ruzbe\AppData\Local\Android\Sdk\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.12.20\c37341e04a529c7263ff3093ecdceaa4ab39b489\byte-buddy-agent-1.12.20.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

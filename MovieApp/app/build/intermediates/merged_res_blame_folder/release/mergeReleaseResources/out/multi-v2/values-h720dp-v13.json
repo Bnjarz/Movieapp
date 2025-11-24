@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.movieapp-mergeReleaseResources-70:/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ruzbe\\AppData\\Local\\Android\\Sdk\\caches\\8.13\\transforms\\9087c4a6dfc4a9e8cec4f61c641aa5b6\\transformed\\appcompat-1.6.1\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}
