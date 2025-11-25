@@ -72,7 +72,7 @@ Para que la aplicación funcione correctamente, se deben seguir estos pasos en o
 
 ##  Gestión del Proyecto
 
-* **Tablero de Trello:** [PEGAR TU ENLACE DE TRELLO AQUÍ]
+* **Tablero de Trello:** [https://trello.com/b/FoiNanPx/movieapp]
     * *Evidencia de planificación y distribución de tareas.*
 
 ---
