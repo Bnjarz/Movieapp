@@ -1,0 +1,4 @@
+key store path: C:\Users\ruzbe\Desktop\New folder\MovieApp\keystore.jks
+password=123456
+alias=key0
+password=123456
