@@ -1,9 +1,27 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp")
 }
 
+val keystorePropertiesFile = rootProject.file("keystore.properties")
+val keystoreProperties = Properties()
+
+val useSigningConfig = if (keystorePropertiesFile.exists()) {
+    try {
+        keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+        true
+    } catch (e: Exception) {
+        println("Error loading keystore.properties: ${e.message}")
+        false
+    }
+} else {
+    println("keystore.properties not found at: ${keystorePropertiesFile.absolutePath}")
+    false
+}
 
 android {
     namespace = "com.example.movieapp"
